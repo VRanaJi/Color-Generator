@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "sansita";
+    color: black;
+    background-color: #19172e;
+}
+
+.heading{
+    color: white;
+    padding-top: 10px;
+    justify-content: center;
+    text-align: center;
+    font-size: 32px;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+.item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn{
+    background: #333;
+    color: white;
+    padding: 15px 60px;
+    font-size: 24px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #1e8e3e;
+}
+
+.copy{
+    color: white;
+    padding: 15px 20px;
+    font-size: 24px;
+    margin: 20px auto;
+    background: #333;
+    cursor: not-allowed;
+    border-radius: 5px;
+    border: none;
+    user-select: none;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 33.3%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #19172e;
+    border: 2px solid #19172e;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+@media (max-width: 500px){
+    .box{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px){
+    .item{
+        flex-direction: column;
+    }
+    .copy{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 300px){
+    .copy{
+        padding: 5px;
+        width: fit-content;
+        text-align: center;
+    }
+    .btn{
+        padding: 5px;
+    }
+}
